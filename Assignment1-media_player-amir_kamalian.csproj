@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>Assignment1_media_player_amir_kamalian</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\assignment_2_image_assets\folder_image.png" />
+    <None Remove="Resources\assignment_2_image_assets\pause_btn.png" />
+    <None Remove="Resources\assignment_2_image_assets\play_btn.png" />
+    <None Remove="Resources\assignment_2_image_assets\stop_btn.png" />
+    <None Remove="Resources\now_playing.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TagLibSharp" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\assignment_2_image_assets\folder_image.png" />
+    <Resource Include="Resources\assignment_2_image_assets\pause_btn.png" />
+    <Resource Include="Resources\assignment_2_image_assets\play_btn.png" />
+    <Resource Include="Resources\assignment_2_image_assets\stop_btn.png" />
+    <Resource Include="Resources\now_playing.PNG" />
+  </ItemGroup>
+
+</Project>
