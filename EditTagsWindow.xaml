@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="EditTagsWindow" Height="325" Width="250">
     <StackPanel Orientation="Vertical" Background="#FF0F2E4A">
+        <Popup Name="yearPopup">
+        <TextBlock Name="errorText" Background="DarkRed" Foreground="White">Incorrect input! check if you are inputting/using number for year</TextBlock>
+        </Popup>
+
         <Label Foreground="White" Content="Song Title:" Target="{Binding ElementName=titleTag}" />
         <TextBox Name="titleTag" MaxLength="50" FontSize="18" FontWeight="Bold" FontStyle="Italic" Margin="10,10,10,0"></TextBox>
         <Label Foreground="White" Content="Artist:" Target="{Binding ElementName=artistTag}" />

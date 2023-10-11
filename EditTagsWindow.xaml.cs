@@ -45,10 +45,7 @@ namespace Assignment1_media_player_amir_kamalian
             }
             catch (Exception ex)
             {
-                Popup pop_error = new Popup();
-                TextBlock pop_error_text = new TextBlock();
-                pop_error_text.Text = "Incorrect input! check if you are inputting/using number for year";
-                pop_error.Child = pop_error_text;
+                yearOpen.IsOpen = true; 
             }
 
 
